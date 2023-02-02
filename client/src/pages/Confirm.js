@@ -10,7 +10,8 @@ const Confirm = () => {
     const fetchTransactionId = async () => {
       let orderId = window.location.search.slice(43, 82);
       let transactionId = window.location.search.slice(15, 34);
-
+      console.log(window.location)   
+      
       try {
         //要在前端get到url 後端才有辦法，送出你的資料給linePay 做最後確認，所以要用window.location.search
         const res = await publicRequest.post(`api/payment/linePay/confirm`, {
