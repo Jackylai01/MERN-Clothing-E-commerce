@@ -53,7 +53,11 @@ app.use("/api/orders", orderRouter);
 app.use("/api/payment", LinePayRouter);
 app.use("/api/newsletter", NewsletterRouter);
 
+
+
+const port = process.env.PORT || 8080;
+
 //伺服器
-app.listen(8080, () => {
+app.listen(port, () => {
   console.log("Server is running on port 8080");
 });
