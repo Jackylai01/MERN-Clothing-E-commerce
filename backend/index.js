@@ -32,11 +32,11 @@ app.use(express.urlencoded({ extended: false }));
 //跨域設定-非簡單請求
 //const corsOptions = {
   //origin: [
-    "https://sandbox-api-pay.line.me/v3/payments/request",
-    "http://localhost:8080",
-    "https://jacky-clothing-e-commerce.onrender.com"
-    "http://localhost:3000",
-    "http://localhost:3001",
+    //"https://sandbox-api-pay.line.me/v3/payments/request",
+    //"http://localhost:8080",
+    //"https://jacky-clothing-e-commerce.onrender.com"
+   //"http://localhost:3000",
+    //"http://localhost:3001",
   ],
   //methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
   //allowedHeaders: ["Content-Type", "Authorization", "token"],
