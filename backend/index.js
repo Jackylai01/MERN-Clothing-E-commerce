@@ -30,20 +30,20 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //跨域設定-非簡單請求
-const corsOptions = {
-  origin: [
+//const corsOptions = {
+  //origin: [
     "https://sandbox-api-pay.line.me/v3/payments/request",
     "http://localhost:8080",
     "https://jacky-clothing-e-commerce.onrender.com"
     "http://localhost:3000",
     "http://localhost:3001",
   ],
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
-  allowedHeaders: ["Content-Type", "Authorization", "token"],
+  //methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
+  //allowedHeaders: ["Content-Type", "Authorization", "token"],
 };
 
 //跨域套件-cors 使用設定參考MDN
-app.use(cors(corsOptions));
+app.use(cors());
 
 //中間件-路由位置
 app.use("/api/auth", authRouter);
