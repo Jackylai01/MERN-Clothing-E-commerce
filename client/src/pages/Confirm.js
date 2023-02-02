@@ -13,12 +13,12 @@ const Confirm = () => {
 
       try {
         //要在前端get到url 後端才有辦法，送出你的資料給linePay 做最後確認，所以要用window.location.search
-        const res = await publicRequest.post(`/payment/linePay/confirm`, {
+        const res = await publicRequest.post(`/api/payment/linePay/confirm`, {
           orderId,
           transactionId,
         });
 
-        await publicRequest.put(`/payment/paymentStatus`, {
+        await publicRequest.put(`/api/payment/paymentStatus`, {
           orderId,
         });
 
