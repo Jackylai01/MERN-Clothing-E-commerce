@@ -23,7 +23,7 @@ function App() {
         <Route path="/product/:id" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
-        <Route path="/api/payment/linePay/confirm" element={<Confirm />} />
+        <Route path="/linePay/confirm" element={<Confirm />} />
         <Route path="/success/:id" element={<Success />} />
         <Route
           path="/register"
