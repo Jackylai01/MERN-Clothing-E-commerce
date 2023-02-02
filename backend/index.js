@@ -54,7 +54,6 @@ app.use("/api/products", ProductsRouter);
 app.use("/api/carts", CartRouter);
 app.use("/api/orders", orderRouter);
 app.use("/api/payment", LinePayRouter);
-app.use("/", LinePayRouter);
 app.use("/api/newsletter", NewsletterRouter);
 
 
