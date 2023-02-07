@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Search, ShoppingCartOutlined } from "@mui/icons-material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-
+import Loading from "./Loading";
 const Info = styled.div`
   opacity: 0;
   width: 100%;
@@ -63,24 +63,32 @@ const Icon = styled.div`
   }
 `;
 
-const Product = ({ item }) => {
+const Product = ({ item, loading }) => {
   return (
     <Container>
-      <Circle />
-      <Image src={item.img} />
-      <Info>
-        <Icon>
-          <Link to={`/product/${item._id}`}>
-            <ShoppingCartOutlined />
-          </Link>
-        </Icon>
-        <Icon>
-          <Search />
-        </Icon>
-        <Icon>
-          <FavoriteBorderIcon />
-        </Icon>
-      </Info>
+      {loading ? (
+        <>
+          <Circle />
+          <Image src={item.img} />
+          <Info>
+            <Icon>
+              <Link to={`/product/${item._id}`}>
+                <ShoppingCartOutlined />
+              </Link>
+            </Icon>
+            <Icon>
+              <Search />
+            </Icon>
+            <Icon>
+              <FavoriteBorderIcon />
+            </Icon>
+          </Info>
+        </>
+      ) : (
+        <>
+          <Loading />
+        </>
+      )}
     </Container>
   );
 };
