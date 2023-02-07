@@ -13,10 +13,12 @@ const Container = styled.div`
 const Products = ({ cat, filters, sort }) => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
-
+  const [loading, setLoading] = useState(false);
+  
   //呼叫products有cat的產品為優先
   useEffect(() => {
     const getProducts = async () => {
+      setLoading(true);
       try {
         const res = await axios.get(
           cat
@@ -27,6 +29,7 @@ const Products = ({ cat, filters, sort }) => {
         setProducts(res.data);
       } catch (err) {}
     };
+    setLoading(false);
     getProducts();
   }, [cat]);
 
@@ -65,11 +68,11 @@ const Products = ({ cat, filters, sort }) => {
     <Container>
       {cat
         ? filteredProducts.map((item, index) => (
-            <Product item={item} key={index} />
+            <Product item={item} key={index} loading={loading} />
           ))
         : products
             .slice(0, 8)
-            .map((item, index) => <Product item={item} key={index} />)}
+            .map((item, index) => <Product item={item} key={index} loading={loading} />)}
     </Container>
   );
 };
