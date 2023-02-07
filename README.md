@@ -1,4 +1,4 @@
-# MERN-Clothing-E-commerce
+# MERN-Clothing-E-commerce-LinePay金流界接
 
 [網站範例連結](https://mern-clothing-e-commerce.vercel.app/ "link")
 
