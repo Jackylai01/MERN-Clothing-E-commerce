@@ -57,17 +57,16 @@ client/   前端
 #
 專案練習說明
 #
-
-*使用node.js+express 串接LinePay 金流
-*使用JWT生成登入驗證Token
-*使用materialUI 設計後台版與原生CSS規劃後台功能+Styles-Components在前端頁面進行切版
-*使用Redux Toolkit 進行user、cart狀態管理
-*後端Restful api製作與跨域設定 (測試版)
-*使用firebase資料庫儲存圖片
-*前端購物車功能製作
-*前端使用localstorage儲存JWT Token作為驗證使用者之方式
-*前端輪播圖功能製作
-*前端搜尋功能與查詢訂單製作
+* 使用node.js+express 串接LinePay 金流
+* 使用JWT生成登入驗證Token
+* 使用materialUI 設計後台版與原生CSS規劃後台功能+Styles-Components在前端頁面進行切版
+* 使用Redux Toolkit 進行user、cart狀態管理
+* 後端Restful api製作與跨域設定 (測試版)
+* 使用firebase資料庫儲存圖片
+* 前端購物車功能製作
+* 前端使用localstorage儲存JWT Token作為驗證使用者之方式
+* 前端輪播圖功能製作
+* 前端搜尋功能與查詢訂單製作
 
 
 
