@@ -32,8 +32,8 @@ const SearchContainer = styled.div`
   border: 0.5px solid lightgray;
   display: flex;
   align-items: center;
-  margin-right: 10px;
-  padding: 5px 0px;
+  margin-left: 25px;
+  padding: 5px 150px;
 `;
 
 const Input = styled.input`
@@ -61,7 +61,7 @@ const Right = styled.div`
 const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
-  margin-left: 25px;
+   margin-right: 30px;
   ${mobile({ fontSize: "12px" })}
 `;
 
