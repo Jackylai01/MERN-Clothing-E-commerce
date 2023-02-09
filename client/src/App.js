@@ -1,3 +1,4 @@
+import "./app.css";
 import Home from "./pages/Home";
 import ProdictList from "./pages/ProdictList";
 import Product from "./pages/Product";
