@@ -25,6 +25,7 @@ const Left = styled.div`
   flex: 1;
   text-align: center;
   align-items: center;
+  margin-left: 25px;
   display: flex;
 `;
 
@@ -32,7 +33,7 @@ const SearchContainer = styled.div`
   border: 0.5px solid lightgray;
   display: flex;
   align-items: center;
-   padding: 5px 150px;
+  padding: 5px 15px;
 `;
 
 const Input = styled.input`
